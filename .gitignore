@@ -1,0 +1,9 @@
+# Compiled program and object files
+traffic
+*.o
+*.out
+*.exe
+
+# Editor and system files
+.vscode/
+.DS_Store
