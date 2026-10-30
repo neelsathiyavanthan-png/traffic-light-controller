@@ -8,7 +8,7 @@
 int readNumber();
 
 // Rohan
-void runLightCycle(TrafficLight& light);
+void runLightCycle(TrafficLight& light, Timer& timer);
 void showCurrentState(TrafficLight& light);
 
 // Lucas
