@@ -5,12 +5,16 @@ using namespace std;
 
 // Rohan's tasks
 
-void runLightCycle(TrafficLight& light) {
-    cout << "Run light cycle - not implemented yet" << endl;
+void runLightCycle(TrafficLight& light, Timer& timer) {
+    for (int i = 0; i < 3; i++) {
+        cout << light.stateName() << " for " << light.currentDuration(timer) << " sec" << endl;
+        light.nextState();
+    }
+    cout << "Back to RED" << endl;
 }
 
 void showCurrentState(TrafficLight& light) {
-    cout << "Show current light - not implemented yet" << endl;
+    cout << "Current light: " << light.stateName() << endl;
 }
 
 // Lucas's tasks
