@@ -24,8 +24,8 @@ Each menu option runs exactly one task function.
 
 | ID | Task | Menu | Owner | Files / function | Status |
 |---|---|---|---|---|---|
-| T1 | Run light cycle | 1 | Rohan | `tasks.cpp: runLightCycle()`, `trafficlight.cpp` | Stub |
-| T2 | Show current light | 2 | Rohan | `tasks.cpp: showCurrentState()` | Stub |
+| T1 | Run light cycle | 1 | Rohan | `tasks.cpp: runLightCycle()`, `trafficlight.cpp` | Done |
+| T2 | Show current light | 2 | Rohan | `tasks.cpp: showCurrentState()` | Done |
 | T3 | Press pedestrian button | 3 | Lucas | `tasks.cpp: pressPedestrianButton()`, `pedestrian.cpp` | Stub |
 | T4 | Run cycle with pedestrian | 4 | Lucas | `tasks.cpp: runCycleWithPedestrian()` | Stub |
 | T5 | Change timing | 5 | Neel | `tasks.cpp: changeTiming()`, `timer.cpp` | Done |

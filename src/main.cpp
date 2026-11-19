@@ -30,7 +30,7 @@ int main() {
 
         switch (choice) {
             case 1:
-                runLightCycle(light);
+                runLightCycle(light, timer);
                 break;
             case 2:
                 showCurrentState(light);
