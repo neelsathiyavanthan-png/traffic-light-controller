@@ -1,15 +1,17 @@
-#include <iostream>
 #include "pedestrian.h"
-using namespace std;
 
 PedestrianButton::PedestrianButton() {
     pressed = false;
     pressCount = 0;
 }
 
-// TODO Lucas: pressing it again while waiting shouldn't do anything extra
+// Pressing again while already waiting does nothing extra
 void PedestrianButton::press() {
-    cout << "press not implemented yet" << endl;
+    if (pressed) {
+        return;
+    }
+    pressed = true;
+    pressCount++;
 }
 
 bool PedestrianButton::isPressed() {

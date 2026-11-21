@@ -20,11 +20,37 @@ void showCurrentState(TrafficLight& light) {
 // Lucas's tasks
 
 void pressPedestrianButton(PedestrianButton& button) {
-    cout << "Press pedestrian button - not implemented yet" << endl;
+    if (button.isPressed()) {
+        cout << "Button already pressed. Waiting for walk (option 4)." << endl;
+        cout << "Total presses so far: " << button.getPressCount() << endl;
+        return;
+    }
+
+    button.press();
+    cout << "Pedestrian button pressed. Walk requested." << endl;
+    cout << "Total presses: " << button.getPressCount() << endl;
 }
 
 void runCycleWithPedestrian(TrafficLight& light, PedestrianButton& button, Timer& timer) {
-    cout << "Run cycle with pedestrian - not implemented yet" << endl;
+    if (!button.isPressed()) {
+        cout << "No walk request. Use option 3 to press the button first." << endl;
+        return;
+    }
+
+    cout << "Pedestrian waiting - finishing cycle to RED safely" << endl;
+
+    // Advance lights until RED so the walk is safe
+    int steps = 0;
+    while (light.getState() != RED && steps < 3) {
+        cout << light.stateName() << " for " << light.currentDuration(timer) << " sec" << endl;
+        light.nextState();
+        steps++;
+    }
+
+    cout << "RED for " << timer.getRed() << " sec" << endl;
+    cout << "WALK signal ON for " << timer.getWalk() << " sec" << endl;
+    button.clear();
+    cout << "Walk done. Pedestrian button cleared." << endl;
 }
 
 // Neel's tasks
