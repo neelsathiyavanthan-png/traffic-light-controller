@@ -17,7 +17,12 @@ Then pick an option from the menu. Enter `0` to exit.
 
 ## Folders
 - `src/` - C++ source code
-- `docs/` - project plan PDF and Excel plan
+- `docs/` - Iteration 3 design PDF, Excel plan, and earlier project plan PDF
+
+## Docs (Iteration 3)
+- `docs/Iteration3_Design_Report.pdf` — design, class diagram, task table
+- `docs/Iteration3_Project_Plan.xlsx` — task table, revised timeline, contributions
+- `docs/Project_Plan_Traffic_Light_Controller.pdf` — original project plan
 
 ## Menu and tasks
 Each menu option runs exactly one task function.
@@ -26,8 +31,8 @@ Each menu option runs exactly one task function.
 |---|---|---|---|---|---|
 | T1 | Run light cycle | 1 | Rohan | `tasks.cpp: runLightCycle()`, `trafficlight.cpp` | Done |
 | T2 | Show current light | 2 | Rohan | `tasks.cpp: showCurrentState()` | Done |
-| T3 | Press pedestrian button | 3 | Lucas | `tasks.cpp: pressPedestrianButton()`, `pedestrian.cpp` | Stub |
-| T4 | Run cycle with pedestrian | 4 | Lucas | `tasks.cpp: runCycleWithPedestrian()` | Stub |
+| T3 | Press pedestrian button | 3 | Lucas | `tasks.cpp: pressPedestrianButton()`, `pedestrian.cpp` | Done |
+| T4 | Run cycle with pedestrian | 4 | Lucas | `tasks.cpp: runCycleWithPedestrian()` | Done |
 | T5 | Change timing | 5 | Neel | `tasks.cpp: changeTiming()`, `timer.cpp` | Done |
 | T6 | Run edge case tests | 6 | Neel | `tasks.cpp: runEdgeCaseTests()` | Done |
 | T7 | Reset system | 7 | Neel | `tasks.cpp: resetSystem()` | Done |
